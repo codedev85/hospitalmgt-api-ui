@@ -1,4 +1,5 @@
 import React , { Component } from 'react';
+import {PostData} from '../../Services/PostData'
 // import React from 'react';
 import './Signin.css';
 
@@ -12,8 +13,14 @@ class Signin extends Component {
 	this.loggedIn = this.loggedIn.bind(this);
 	this.onValueChange = this.onValueChange.bind(this);
 }
+   
    loggedIn(){
-	console.log('logged in')
+	PostData('signin',this.state).then((result)=> {
+		
+		let responseJSON = result ;
+		console.log(responseJSON);
+	})
+
 	}
 
 	onValueChange(e){

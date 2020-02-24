@@ -34,8 +34,8 @@ constructor(){
 	this.state={
 		route:'signin',
 		isSignedIn: false,
-		username:'',
-		password:'',
+		// username:'',
+		// password:'',
 	}
 
 }
