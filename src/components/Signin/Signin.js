@@ -15,7 +15,7 @@ class Signin extends Component {
 }
    
    loggedIn(){
-	PostData('signin',this.state).then((result)=> {
+	PostData('login',this.state).then((result)=> {
 		
 		let responseJSON = result ;
 		console.log(responseJSON);
